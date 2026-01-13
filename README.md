@@ -35,8 +35,7 @@ Este proyecto corresponde a la Actividad Formativa 1: Explorando la sobrecarga y
 1. Clona el repositorio desde GitHub:
 
 ```bash
-git clone https://github.com/andreamaedo/SalmonttEFT.git
-```
+](https://github.com/andreamaedo/SpeedFast.git)```
 
 2. Abre el proyecto en IntelliJ IDEA.
 
@@ -47,7 +46,7 @@ git clone https://github.com/andreamaedo/SalmonttEFT.git
 
 ---
 
-**Repositorio GitHub:** \ https://github.com/andreamaedo/SalmonttEFT.git
+**Repositorio GitHub:** \ (https://github.com/andreamaedo/SpeedFast.git)
 **Fecha de entrega:** \[12/01/2026]
 
 ---
