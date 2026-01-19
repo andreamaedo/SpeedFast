@@ -2,33 +2,18 @@ package main;
 
 public class PedidoService {
 
-    // Versión para Restaurante
     public void crearPedido(PedidoComida pedido) {
-        System.out.println("--- Registrando Pedido de Comida ---");
-        System.out.println("ID Pedido: " + pedido.getIdPedido());
-        System.out.println("Dirección: " + pedido.getDireccionEntrega());
-
-        // Llamada al método polimórfico (Sobrescrito)
-        pedido.asignarRepartidor();
+        System.out.println(">>> Servicio: Procesando Pedido de COMIDA [" + pedido.getIdPedido() + "]");
+        pedido.asignarRepartidor(); // Llama a la versión polimórfica
     }
 
-    // Versión para Encomienda
     public void crearPedido(PedidoEncomienda pedido) {
-        System.out.println("--- Registrando Pedido de Encomienda ---");
-        System.out.println("ID Pedido: " + pedido.getIdPedido());
-        System.out.println("Dirección: " + pedido.getDireccionEntrega());
-
-        // Llamada al método polimórfico (Sobrescrito)
-        pedido.asignarRepartidor();
+        System.out.println(">>> Servicio: Procesando ENCOMIENDA [" + pedido.getIdPedido() + "]");
+        pedido.asignarRepartidor(); // Llama a la versión polimórfica
     }
 
-    // Versión para Express
     public void crearPedido(PedidoExpress pedido) {
-        System.out.println("--- Registrando Pedido Express ---");
-        System.out.println("ID Pedido: " + pedido.getIdPedido());
-        System.out.println("Dirección: " + pedido.getDireccionEntrega());
-
-        // Llamada al método polimórfico (Sobrescrito)
-        pedido.asignarRepartidor();
+        System.out.println(">>> Servicio: Procesando COMPRA EXPRESS [" + pedido.getIdPedido() + "]");
+        pedido.asignarRepartidor(); // Llama a la versión polimórfica
     }
 }
