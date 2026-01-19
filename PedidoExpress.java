@@ -1,17 +1,21 @@
 package main;
 
 public class PedidoExpress extends Pedido {
-    public PedidoExpress(String id, String direccion) {
-        super(id, direccion, "Compra Express");
+    public PedidoExpress(String id, String direccion, double distancia) {
+        super(id, direccion, distancia);
+    }
+
+    @Override
+    public int calcularTiempoEntrega() {
+        int tiempo = 10;
+        if (distanciaKm > 5) {
+            tiempo += 5;
+        }
+        return tiempo;
     }
 
     @Override
     public void asignarRepartidor() {
-        System.out.println("Localizando al repartidor más cercano con disponibilidad inmediata para Compra Express...");
-    }
-
-    @Override
-    public void asignarRepartidor(String nombreRepartidor) {
-        System.out.println("Asignando a " + nombreRepartidor + " por cercanía GPS inmediata.");
+        System.out.println("[Express] Localizando repartidor por cercanía GPS...");
     }
 }
