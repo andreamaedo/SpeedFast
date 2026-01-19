@@ -1,24 +1,33 @@
 package main;
 
-public class Pedido {
+public abstract class Pedido {
     private String idPedido;
     private String direccionEntrega;
-    private String tipoPedido;
+    protected double distanciaKm; 
 
-    public Pedido(String idPedido, String direccionEntrega, String tipoPedido) {
+    public Pedido(String idPedido, String direccionEntrega, double distanciaKm) {
         this.idPedido = idPedido;
         this.direccionEntrega = direccionEntrega;
-        this.tipoPedido = tipoPedido;
+        this.distanciaKm = distanciaKm;
     }
 
-    // Método que será SOBRESCRITO (Polimorfismo)
+    // Método implementado común
+    public void mostrarResumen() {
+        System.out.println("------------------------------------------");
+        System.out.println("ID Pedido: " + idPedido);
+        System.out.println("Dirección: " + direccionEntrega);
+        System.out.println("Distancia: " + distanciaKm + " km");
+    }
+
+    // MÉTODO ABSTRACTO (Paso 1 de la evaluación)
+    public abstract int calcularTiempoEntrega();
+
     public void asignarRepartidor() {
-        System.out.println("Asignando un repartidor genérico para el pedido: " + idPedido);
+        System.out.println("Asignando repartidor genérico...");
     }
 
-    // Método SOBRECARGADO (Paso 3)
-    public void asignarRepartidor(String nombreRepartidor) {
-        System.out.println("Asignando manualmente a: " + nombreRepartidor);
+    public void asignarRepartidor(String nombre) {
+        System.out.println("Asignando manualmente a: " + nombre);
     }
 
     // Getters
