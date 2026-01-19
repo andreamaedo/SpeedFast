@@ -2,19 +2,23 @@ package main;
 
 public class Main {
     public static void main(String[] args) {
-        // Instancias de cada subclase
-        Pedido pedido1 = new PedidoComida("C-001", "Av. Central 123");
-        Pedido pedido2 = new PedidoEncomienda("E-505", "Calle Roble 45");
-        Pedido pedido3 = new PedidoExpress("X-999", "Supermercado El Sol");
+        // Paso 3: Crear objetos (usaremos 6km para probar la lógica de Express)
+        Pedido p1 = new PedidoComida("C-101", "Av. Central 123", 6.0);
+        Pedido p2 = new PedidoEncomienda("E-202", "Calle Roble 45", 6.0);
+        Pedido p3 = new PedidoExpress("X-303", "Supermercado El Sol", 6.0);
 
-        System.out.println("--- PRUEBAS DE SOBRESCRITURA (Polimorfismo) ---");
-        pedido1.asignarRepartidor();
-        pedido2.asignarRepartidor();
-        pedido3.asignarRepartidor();
+        System.out.println("=== REPORTE DE LOGÍSTICA SPEEDFAST ===");
 
-        System.out.println("\n--- PRUEBAS DE SOBRECARGA ---");
-        pedido1.asignarRepartidor("Juan Pérez");
-        pedido2.asignarRepartidor("María López");
-        pedido3.asignarRepartidor("Carlos Ruiz");
+        // Array para iterar y mostrar polimorfismo puro
+        Pedido[] pedidos = {p1, p2, p3};
+
+        for (Pedido p : pedidos) {
+            p.mostrarResumen();
+            System.out.println("Tiempo estimado: " + p.calcularTiempoEntrega() + " minutos");
+            p.asignarRepartidor(); // Ya no sale en rojo
+        }
+
+        System.out.println("\n--- PRUEBA DE SOBRECARGA MANUAL ---");
+        p1.asignarRepartidor("Juan Pérez");
     }
 }
