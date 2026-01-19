@@ -1,6 +1,5 @@
 ![Duoc UC](https://www.duoc.cl/wp-content/uploads/2022/09/logo-0.png)
-# 🧠 Actividad Formativa 1: Explorando la sobrecarga y sobrescritura en clases derivadas
-
+# 🧠 Actividad Formativa 2: Definiendo clase abstracta y su jerarquía
 ## 👤 Autor del proyecto
 - **Nombre completo:** [Andrea Angélica Mena Aedo]
 - **Sección:** [003A]
@@ -10,8 +9,7 @@
 ---
 
 ## 📘 Descripción general del sistema
-Este proyecto corresponde a la Actividad Formativa 1: Explorando la sobrecarga y sobrescritura en clases derivadas. 
-
+Este proyecto corresponde a la Actividad Formativa 2: Definiendo clase abstracta y su jerarquía
 ---
 
 ## 🧱 Estructura general del proyecto
@@ -47,7 +45,7 @@ Este proyecto corresponde a la Actividad Formativa 1: Explorando la sobrecarga y
 ---
 
 **Repositorio GitHub:** \ (https://github.com/andreamaedo/SpeedFast.git)
-**Fecha de entrega:** \[12/01/2026]
+**Fecha de entrega:** \[19/01/2026]
 
 ---
 
