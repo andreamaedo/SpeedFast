@@ -1,5 +1,5 @@
 ![Duoc UC](https://www.duoc.cl/wp-content/uploads/2022/09/logo-0.png)
-# 🧠 Actividad Formativa 2: Definiendo clase abstracta y su jerarquía
+# 🧠 Actividad Sumativa 1: Diseñando un sistema orientado a objetos con clases abstractas, polimorfismo e interfaces
 ## 👤 Autor del proyecto
 - **Nombre completo:** [Andrea Angélica Mena Aedo]
 - **Sección:** [003A]
@@ -9,7 +9,7 @@
 ---
 
 ## 📘 Descripción general del sistema
-Este proyecto corresponde a la Actividad Formativa 2: Definiendo clase abstracta y su jerarquía
+Este proyecto corresponde a la Actividad Sumativa 1: Diseñando un sistema orientado a objetos con clases abstractas, polimorfismo e interfaces
 ---
 
 ## 🧱 Estructura general del proyecto
@@ -17,11 +17,14 @@ Este proyecto corresponde a la Actividad Formativa 2: Definiendo clase abstracta
 ```plaintext
 📁 src/
 ├── Main/         # Clase principal con el método main
-├── Pedido/       # Es la clase base que define los atributos generales (ID, dirección, tipo) y establece el contrato para el método de asignación de repartidores.
+├── Pedido/       # Es la clase abstracta base que define los atributos generales (ID, dirección, tipo) y establece el contrato para el método de asignación de repartidores.
 ├── PedidoComida/   # Subclase que especializa la asignación de repartidores exigiendo específicamente el uso de mochila térmica.
-├──PedidoEncomienda/ # Subclase que sobrescribe la lógica de asignación para incluir la validación obligatoria de peso y embalaje del paquete.
-├──PedidoExpress/ # Subclase diseñada para gestionar entregas rápidas priorizando la cercanía geográfica y disponibilidad inmediata del repartidor.
-└── PedidoService/  # Clase encargada de la lógica de negocio que utiliza la sobrecarga de métodos para procesar y registrar los diferentes tipos de pedidos.
+├── PedidoEncomienda/ # Subclase que sobrescribe la lógica de asignación para incluir la validación obligatoria de peso y embalaje del paquete.
+├── PedidoExpress/ # Subclase diseñada para gestionar entregas rápidas priorizando la cercanía geográfica y disponibilidad inmediata del repartidor.
+├── PedidoService/  # Clase encargada de la lógica de negocio que utiliza la sobrecarga de métodos para procesar y registrar los diferentes tipos de pedidos.
+├── Cancelable/    # Interfaz que define un contrato de "cancelación". 
+├── Despachable/    # Interfaz diseñada para estandarizar la ejecución o el envío de tareas pendientes.
+└── Rastreable/     # Interfaz que muestra el historial de pedidos.
 ````
 
 ---
@@ -45,7 +48,7 @@ Este proyecto corresponde a la Actividad Formativa 2: Definiendo clase abstracta
 ---
 
 **Repositorio GitHub:** \ (https://github.com/andreamaedo/SpeedFast.git)
-**Fecha de entrega:** \[19/01/2026]
+**Fecha de entrega:** \[26/01/2026]
 
 ---
 
