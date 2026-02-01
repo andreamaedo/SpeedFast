@@ -1,5 +1,5 @@
 ![Duoc UC](https://www.duoc.cl/wp-content/uploads/2022/09/logo-0.png)
-# 🧠 Actividad Sumativa 1: Diseñando un sistema orientado a objetos con clases abstractas, polimorfismo e interfaces
+# 🧠 Actividad Formativa 3: Ejecutando tareas en paralelo con hilos en Java
 ## 👤 Autor del proyecto
 - **Nombre completo:** [Andrea Angélica Mena Aedo]
 - **Sección:** [003A]
@@ -9,7 +9,7 @@
 ---
 
 ## 📘 Descripción general del sistema
-Este proyecto corresponde a la Actividad Sumativa 1: Diseñando un sistema orientado a objetos con clases abstractas, polimorfismo e interfaces
+Este proyecto corresponde a la Actividad Formativa 3: Ejecutando tareas en paralelo con hilos en Java
 ---
 
 ## 🧱 Estructura general del proyecto
@@ -24,6 +24,7 @@ Este proyecto corresponde a la Actividad Sumativa 1: Diseñando un sistema orien
 ├── PedidoService/  # Clase encargada de la lógica de negocio que utiliza la sobrecarga de métodos para procesar y registrar los diferentes tipos de pedidos.
 ├── Cancelable/    # Interfaz que define un contrato de "cancelación". 
 ├── Despachable/    # Interfaz diseñada para estandarizar la ejecución o el envío de tareas pendientes.
+├── Repartidor/     # Clase que maneja a los repartidores y los pedidos asignados a cada uno.
 └── Rastreable/     # Interfaz que muestra el historial de pedidos.
 ````
 
@@ -48,7 +49,7 @@ Este proyecto corresponde a la Actividad Sumativa 1: Diseñando un sistema orien
 ---
 
 **Repositorio GitHub:** \ (https://github.com/andreamaedo/SpeedFast.git)
-**Fecha de entrega:** \[26/01/2026]
+**Fecha de entrega:** \[01/02/2026]
 
 ---
 
